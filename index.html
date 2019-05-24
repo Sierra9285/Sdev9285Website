@@ -67,6 +67,15 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script>  $('.dropdown-trigger').dropdown(); </script>
+    <script>   
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, options);
+      });
+    
+      // Or with jQuery
+    
+      $('.dropdown-trigger').dropdown(); 
+      </script>
     </body>
   </html>
